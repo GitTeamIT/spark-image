@@ -7,7 +7,7 @@ spark = SparkSession.builder \
 # URL del archivo CSV en GitHub
 
 # Leer el archivo CSV directamente desde la URL en cada nodo del cluster
-df = spark.read.csv("file:///opt/bitnami/spark/tmp/StudentData.csv", inferSchema=True, header=True)
+df = spark.read.csv("file:///opt/spark/StudentData.csv", inferSchema=True, header=True)
 
 # Mostrar el esquema y las primeras filas del DataFrame
 df.printSchema()
