@@ -3,6 +3,9 @@ FROM spark:3.5.0
 
 USER root
 
+RUN mkdir -p /tmp/spark-events
+RUN chmod -R 777 /tmp/spark-events
+
 # Crear directorio para el history server
 RUN mkdir -p /mnt/data/spark-history
 RUN chmod -R 777 /mnt/data/spark-history
