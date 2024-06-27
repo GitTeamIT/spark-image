@@ -1,6 +1,8 @@
 # Usa la imagen base de Spark 3.5.0
 FROM spark:3.5.0
 
+USER root
+
 # Crear directorio para el history server
 RUN mkdir -p /mnt/data/spark-history
 RUN chmod -R 777 /mnt/data/spark-history
