@@ -1,4 +1,4 @@
 FROM quay.io/jupyter/minimal-notebook
 
-USER root
+RUN sudo chown -R jovyan /home/jovyan/.local/share/jupyter
 
