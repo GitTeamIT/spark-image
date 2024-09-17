@@ -1,5 +1,7 @@
 FROM quay.io/jupyter/minimal-notebook
 
 USER root
-RUN sudo chown -R user:user ~/.local/share/jupyter 
+
+RUN sudo jupyter notebook --allow-root
+RUN sudo chmod -R 777 .local
 
