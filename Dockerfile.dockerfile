@@ -6,8 +6,8 @@ RUN rm -f hadoop-client-api-3.3.4.jar \
 
 RUN mkdir -p /opt/spark/jars && \
     curl -o /opt/spark/jars/hadoop-common-3.4.0.jar https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-common/3.4.0/hadoop-common-3.4.0.jar && \
-    curl -o hadoop-client-api-3.4.0.jar https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-client-api/3.4.0/hadoop-client-api-3.4.0.jar \
-    && curl -o hadoop-client-runtime-3.4.0.jar https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-client-runtime/3.4.0/hadoop-client-runtime-3.4.0.jar && \ 
+    curl -o /opt/spark/jars/hadoop-client-api-3.4.0.jar https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-client-api/3.4.0/hadoop-client-api-3.4.0.jar \
+    && curl -o /opt/spark/jars/hadoop-client-runtime-3.4.0.jar https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-client-runtime/3.4.0/hadoop-client-runtime-3.4.0.jar && \ 
     curl -o /opt/spark/jars/hadoop-aws-3.4.0.jar https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-aws/3.4.0/hadoop-aws-3.4.0.jar && \
     curl -o /opt/spark/jars/aws-java-sdk-core-1.12.772.jar https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-core/1.12.772/aws-java-sdk-core-1.12.772.jar && \
     curl -o /opt/spark/jars/aws-java-sdk-dynamodb-1.12.772.jar https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-dynamodb/1.12.772/aws-java-sdk-dynamodb-1.12.772.jar  && \
