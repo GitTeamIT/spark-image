@@ -1,6 +1,8 @@
 # Usa la imagen base de Spark 3.5.0
 FROM spark:3.5.0
 
+USER root
+
 RUN rm -f hadoop-client-api-3.3.4.jar \
     && rm -f hadoop-client-runtime-3.3.4.jar
 
