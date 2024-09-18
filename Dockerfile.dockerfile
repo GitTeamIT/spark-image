@@ -6,7 +6,8 @@ RUN mkdir -p /opt/spark/jars && \
     curl -o /opt/spark/jars/aws-java-sdk-core-1.12.772.jar https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-core/1.12.772/aws-java-sdk-core-1.12.772.jar && \
     curl -o /opt/spark/jars/aws-java-sdk-dynamodb-1.12.772.jar https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-dynamodb/1.12.772/aws-java-sdk-dynamodb-1.12.772.jar  && \
     curl -o /opt/spark/jars/aws-java-sdk-s3-1.12.772.jar https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-s3/1.12.772/aws-java-sdk-s3-1.12.772.jar && \
-    curl -o /opt/spark/jars/aws-java-sdk-bundle-1.12.772.jar https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-bundle/1.12.772/aws-java-sdk-bundle-1.12.772.jar
+    curl -o /opt/spark/jars/aws-java-sdk-bundle-1.12.772.jar https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-bundle/1.12.772/aws-java-sdk-bundle-1.12.772.jar && \
+    curl -o /opt/spark/jars/s3-2.28.2.jar https://repo1.maven.org/maven2/software/amazon/awssdk/s3/2.28.2/s3-2.28.2.jar
 
 # Copia tu archivo .py a /opt/spark en la imagen
 COPY lectura_de_datos_con_un_csv.py /opt/spark/lectura_de_datos_con_un_csv.py
